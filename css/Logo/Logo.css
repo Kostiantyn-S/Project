@@ -1,0 +1,41 @@
+.Logo-image {
+	height: 70px;
+}
+
+@media all and (min-width: 1025px) {
+	.Logo-text {
+		display: none;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+	.Logo {
+		display: flex;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 1024px) {
+	.Logo {
+		justify-content: center;
+	}
+
+	.Logo-text {
+		height: 70px;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+	.Logo {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.Logo-text {
+		height: 50px;
+	}
+
+	.Logo-image {
+		height: 50px;
+		margin-bottom: 10px;
+	}
+}

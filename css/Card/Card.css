@@ -1,0 +1,145 @@
+.Card {
+	display: flex;
+}
+
+.Card-conteiner {
+	background: #e6e6e6;
+	padding: 15px;
+	margin: 25px 25px;
+}
+
+.Card-text {
+	font-family: Georgia;
+	font-size: 16px;
+	line-height: 150%;
+	text-indent: 50px;
+}
+
+.Card-buttonConteiner {
+	padding: 20px 0 20px 0;
+}
+
+.Card-buttonForm {
+	display: flex;
+	justify-content: space-around;
+}
+
+.Card-textarea {
+	width: 300px;
+}
+
+.Card-button {
+  display: inline-block;
+  color: #ff4642;
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  background: #3498db;
+  padding: 10px 30px;
+  outline: none;
+  border: 0px solid #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+ }
+
+.Card-button:hover { background: #1d0600; }
+.Card-button:active { background: #fff; }
+
+.Card-itemLink {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.Card-item {
+	height: 100%;
+	background: #e6e6e6;
+	margin: 10px;
+}
+
+.Card-item:hover {
+	transform: scale(1.2);
+
+}
+
+.Card-image {
+	width: 100%;
+}
+
+.Card-paragraph {
+	padding: 10px;
+	font-family: Georgia;
+	font-size: 12px;
+	line-height: 150%;
+	text-indent: 10px;
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+	.Card {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.Card-conteiner {
+		padding: 7px;
+		margin: 0;
+		width: 100%;
+	}
+
+	.Card-text {
+		font-family: Georgia;
+		font-size: 0.8em;
+		line-height: 150%;
+		text-indent: 25px;
+	}
+
+	.Card-buttonForm {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 20px 0 10px 0;
+	}
+
+	.Card-textarea {
+		width: 100%;
+		margin-bottom: 10px;
+		height: 50px;
+	}
+
+	.Card-button {
+	  font-size: 1em;
+	  padding: 5px 10px;
+	  width: 40%;
+	}
+
+	.Card-itemLink {
+		padding: 5px;
+	}
+
+	.Card-item {
+		margin: 0;
+	}
+
+	.Card-paragraph {
+		padding: 0;
+		font-size: 0.7em;
+		line-height: 150%;
+		text-indent: 5px;
+		margin: 10px 0 0 0;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 1024px) {
+	.Card-itemLink {
+		width: 30%;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+	.Card-itemLink {
+		width: 45%;
+	}
+}
